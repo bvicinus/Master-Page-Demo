@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Demo.master.cs" Inherits="MasterPages_Demo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page Demo</title>
+
+    <link rel="stylesheet" href="~/Styles/Styles.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <header>Header Goes Here</header>
+
+        <section id="MainContent">
+
+           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+           </asp:ContentPlaceHolder>
+
+
+        </section> 
+
+        <aside id="Sidebar">Sidebar Goes Here <br /> <br />
+
+            Adalah menjadi satu fakta bahawa pembaca akan terganggu oleh 
+            text yang boleh difahami apabila melihat susunan mukasurat. 
+
+        </aside>
+        <footer>Footer Goes Here</footer>
+       
+    </div>
+    </form>
+</body>
+</html>
